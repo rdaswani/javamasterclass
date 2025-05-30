@@ -44,4 +44,3 @@ You would get a warning its not a upstream branch , the below should resolve and
 git push --set-upstream origin master
 
 go back to remote in UI and check the files
-
