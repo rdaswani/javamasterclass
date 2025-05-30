@@ -1,0 +1,30 @@
+************************************************************/
+*                                                          *
+*                                   *
+*                 ******** GIT TIPS & TRICKS ********       *
+
+************************************************************/
+
+
+[Working Directory] --(git add)--> [Staging Area] --(git commit)--> [Local Repository]
+
+
+first step in a project when you start afresh
+
+git init to initialise the directory in git
+
+use below commands to configure username and email
+git config user.name Rajesh
+git config user.email rajesh.daswani@gmail.com
+
+below command to check
+git config -l --local
+
+use git log and git status to check what is the status
+
+use .gitignore file to ignore the files or dir from versioning
+
+use git add . to push files to staging area
+check if they moved using git status
+
+
