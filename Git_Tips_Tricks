@@ -27,4 +27,21 @@ use .gitignore file to ignore the files or dir from versioning
 use git add . to push files to staging area
 check if they moved using git status
 
+Now to push them to the local repository
+use git commit which opens up the default text editor, update commit message in first line and close the file, to dit it one go use git commit -m
+
+check git status after commit and use git log to check the initial commit
+
+Pushing
+
+To send the commit from local to remote repo
+create a repo in the remote github UI, copy the url and use below command
+git remote add origin https://github.com/rdaswani/javamasterclass.git
+
+then git push
+
+You would get a warning its not a upstream branch , the below should resolve and push
+git push --set-upstream origin master
+
+go back to remote in UI and check the files
 

@@ -1,0 +1,469 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git init
+Initialized empty Git repository in C:/Users/RajeshDaswani/IdeaProjects/JavaMasterClass/.git/
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git config user.name Rajesh
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git config user.email rajesh.daswani@gmail.com
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git config -l --local
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=Rajesh
+user.email=rajesh.daswani@gmail.com
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git config -l --global
+user.name=rdaswani
+user.email=rajesh.daswani@gmail.com
+core.autocrlf=true
+core.safecrlf=warn
+core.editor=code --wait
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        .idea/
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git log
+fatal: your current branch 'master' does not have any commits yet
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass>  git config user.name Rajesh
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/tutorialseu/oops/BankAccount.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/tutorialseu/oops/BankAccountManagementSystem.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/tutorialseu/oops/BankService.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/tutorialseu/oops/CurrentAccount.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/tutorialseu/oops/InputUtils.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/tutorialseu/oops/SavingsAccount.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/org/example/Main.java', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Git one pager
+        new file:   pom.xml
+        new file:   src/main/java/abstraction/Car.java
+        new file:   src/main/java/abstraction/DieselCar.java
+        new file:   src/main/java/abstraction/ElectricCar.java
+        new file:   src/main/java/abstraction/GasolineCar.java
+        new file:   src/main/java/abstraction/Main.java
+        new file:   src/main/java/bankaccountproject/BankAccount.java
+        new file:   src/main/java/bankaccountproject/BankAccountManagementSystem.java
+        new file:   src/main/java/bankaccountproject/BankService.java
+        new file:   src/main/java/bankaccountproject/CurrentAccount.java
+        new file:   src/main/java/bankaccountproject/InputUtils.java
+        new file:   src/main/java/bankaccountproject/LinkedHashSetExample.java
+        new file:   src/main/java/bankaccountproject/SavingsAccount.java
+        new file:   src/main/java/collections/CustomTreeSetExample.java
+        new file:   src/main/java/collections/DuplicateChecker.java
+        new file:   src/main/java/collections/TreeSetExample.java
+        new file:   src/main/java/collections/TreeSetNavigationExample.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccountManagementSystem.java
+        new file:   src/main/java/com/tutorialseu/oops/BankService.java
+        new file:   src/main/java/com/tutorialseu/oops/CurrentAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/InputUtils.java
+        new file:   src/main/java/com/tutorialseu/oops/SavingsAccount.java
+        new file:   src/main/java/ooppackage/AdvancedGame.java
+        new file:   src/main/java/ooppackage/Game.java
+        new file:   src/main/java/ooppackage/InputGame.java
+        new file:   src/main/java/ooppackage/WordGuessingGame.java
+        new file:   src/main/java/org/example/Main.java
+        new file:   src/main/java/uptoday15/NumberGuessingGame.java
+        new file:   src/main/java/uptoday15/NumberOfDigits.java
+        new file:   src/main/java/uptoday15/RemoveDuplicates.java
+        new file:   src/main/java/uptoday15/ToDoApp.java
+        new file:   src/main/java/uptoday15/TodoList.java
+        new file:   src/main/java/uptoday20/Dice.java
+        new file:   src/main/java/uptoday20/Game.java
+        new file:   src/main/java/uptoday20/LuckyDiceAdventure.java
+        new file:   src/main/java/uptoday20/MathQuiz.java
+        new file:   src/main/java/uptoday20/MathQuizGame.java
+        new file:   src/main/java/uptoday20/Question.java
+        new file:   src/main/java/uptoday20/Student.java
+        new file:   src/main/java/uptoday20/StudentArrayExample.java
+        new file:   src/main/java/uptoday20/TestCar.java
+        new file:   src/main/java/uptoday20/TestMain.java
+
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git log
+fatal: your current branch 'master' does not have any commits yet
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git commit
+Aborting commit due to empty commit message.
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Git_Tips_Tricks
+        new file:   pom.xml
+        new file:   src/main/java/abstraction/Car.java
+        new file:   src/main/java/abstraction/DieselCar.java
+        new file:   src/main/java/abstraction/ElectricCar.java
+        new file:   src/main/java/abstraction/GasolineCar.java
+        new file:   src/main/java/abstraction/Main.java
+        new file:   src/main/java/bankaccountproject/BankAccount.java
+        new file:   src/main/java/bankaccountproject/BankAccountManagementSystem.java
+        new file:   src/main/java/bankaccountproject/BankService.java
+        new file:   src/main/java/bankaccountproject/CurrentAccount.java
+        new file:   src/main/java/bankaccountproject/InputUtils.java
+        new file:   src/main/java/bankaccountproject/LinkedHashSetExample.java
+        new file:   src/main/java/bankaccountproject/SavingsAccount.java
+        new file:   src/main/java/collections/CustomTreeSetExample.java
+        new file:   src/main/java/collections/DuplicateChecker.java
+        new file:   src/main/java/collections/TreeSetExample.java
+        new file:   src/main/java/collections/TreeSetNavigationExample.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccountManagementSystem.java
+        new file:   src/main/java/com/tutorialseu/oops/BankService.java
+        new file:   src/main/java/com/tutorialseu/oops/CurrentAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/InputUtils.java
+        new file:   src/main/java/com/tutorialseu/oops/SavingsAccount.java
+        new file:   src/main/java/ooppackage/AdvancedGame.java
+        new file:   src/main/java/ooppackage/Game.java
+        new file:   src/main/java/ooppackage/InputGame.java
+        new file:   src/main/java/ooppackage/WordGuessingGame.java
+        new file:   src/main/java/org/example/Main.java
+        new file:   src/main/java/uptoday15/NumberGuessingGame.java
+        new file:   src/main/java/uptoday15/NumberOfDigits.java
+        new file:   src/main/java/uptoday15/RemoveDuplicates.java
+        new file:   src/main/java/uptoday15/ToDoApp.java
+        new file:   src/main/java/uptoday15/TodoList.java
+        new file:   src/main/java/uptoday20/Dice.java
+        new file:   src/main/java/uptoday20/Game.java
+        new file:   src/main/java/uptoday20/LuckyDiceAdventure.java
+        new file:   src/main/java/uptoday20/MathQuiz.java
+        new file:   src/main/java/uptoday20/MathQuizGame.java
+        new file:   src/main/java/uptoday20/Question.java
+        new file:   src/main/java/uptoday20/Student.java
+        new file:   src/main/java/uptoday20/StudentArrayExample.java
+        new file:   src/main/java/uptoday20/TestCar.java
+        new file:   src/main/java/uptoday20/TestMain.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git_Tips_Tricks
+
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Git_Tips_Tricks
+        new file:   pom.xml
+        new file:   src/main/java/abstraction/Car.java
+        new file:   src/main/java/abstraction/DieselCar.java
+        new file:   src/main/java/abstraction/ElectricCar.java
+        new file:   src/main/java/abstraction/GasolineCar.java
+        new file:   src/main/java/abstraction/Main.java
+        new file:   src/main/java/bankaccountproject/BankAccount.java
+        new file:   src/main/java/bankaccountproject/BankAccountManagementSystem.java
+        new file:   src/main/java/bankaccountproject/BankService.java
+        new file:   src/main/java/bankaccountproject/CurrentAccount.java
+        new file:   src/main/java/bankaccountproject/InputUtils.java
+        new file:   src/main/java/bankaccountproject/LinkedHashSetExample.java
+        new file:   src/main/java/bankaccountproject/SavingsAccount.java
+        new file:   src/main/java/collections/CustomTreeSetExample.java
+        new file:   src/main/java/collections/DuplicateChecker.java
+        new file:   src/main/java/collections/TreeSetExample.java
+        new file:   src/main/java/collections/TreeSetNavigationExample.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccountManagementSystem.java
+        new file:   src/main/java/com/tutorialseu/oops/BankService.java
+        new file:   src/main/java/com/tutorialseu/oops/CurrentAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/InputUtils.java
+        new file:   src/main/java/com/tutorialseu/oops/SavingsAccount.java
+        new file:   src/main/java/ooppackage/AdvancedGame.java
+        new file:   src/main/java/ooppackage/Game.java
+        new file:   src/main/java/ooppackage/InputGame.java
+        new file:   src/main/java/ooppackage/WordGuessingGame.java
+        new file:   src/main/java/org/example/Main.java
+        new file:   src/main/java/uptoday15/NumberGuessingGame.java
+        new file:   src/main/java/uptoday15/NumberOfDigits.java
+        new file:   src/main/java/uptoday15/RemoveDuplicates.java
+        new file:   src/main/java/uptoday15/ToDoApp.java
+        new file:   src/main/java/uptoday15/TodoList.java
+        new file:   src/main/java/uptoday20/Dice.java
+        new file:   src/main/java/uptoday20/Game.java
+        new file:   src/main/java/uptoday20/LuckyDiceAdventure.java
+        new file:   src/main/java/uptoday20/MathQuiz.java
+        new file:   src/main/java/uptoday20/MathQuizGame.java
+        new file:   src/main/java/uptoday20/Question.java
+        new file:   src/main/java/uptoday20/Student.java
+        new file:   src/main/java/uptoday20/StudentArrayExample.java
+        new file:   src/main/java/uptoday20/TestCar.java
+        new file:   src/main/java/uptoday20/TestMain.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git_Tips_Tricks
+
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git add .
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Git_Tips_Tricks
+        new file:   pom.xml
+        new file:   src/main/java/abstraction/Car.java
+        new file:   src/main/java/abstraction/DieselCar.java
+        new file:   src/main/java/abstraction/ElectricCar.java
+        new file:   src/main/java/abstraction/GasolineCar.java
+        new file:   src/main/java/abstraction/Main.java
+        new file:   src/main/java/bankaccountproject/BankAccount.java
+        new file:   src/main/java/bankaccountproject/BankAccountManagementSystem.java
+        new file:   src/main/java/bankaccountproject/BankService.java
+        new file:   src/main/java/bankaccountproject/CurrentAccount.java
+        new file:   src/main/java/bankaccountproject/InputUtils.java
+        new file:   src/main/java/bankaccountproject/LinkedHashSetExample.java
+        new file:   src/main/java/bankaccountproject/SavingsAccount.java
+        new file:   src/main/java/collections/CustomTreeSetExample.java
+        new file:   src/main/java/collections/DuplicateChecker.java
+        new file:   src/main/java/collections/TreeSetExample.java
+        new file:   src/main/java/collections/TreeSetNavigationExample.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccountManagementSystem.java
+        new file:   src/main/java/com/tutorialseu/oops/BankService.java
+        new file:   src/main/java/com/tutorialseu/oops/CurrentAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/InputUtils.java
+        new file:   src/main/java/com/tutorialseu/oops/SavingsAccount.java
+        new file:   src/main/java/ooppackage/AdvancedGame.java
+        new file:   src/main/java/ooppackage/Game.java
+        new file:   src/main/java/ooppackage/InputGame.java
+        new file:   src/main/java/ooppackage/WordGuessingGame.java
+        new file:   src/main/java/org/example/Main.java
+        new file:   src/main/java/uptoday15/NumberGuessingGame.java
+        new file:   src/main/java/uptoday15/NumberOfDigits.java
+        new file:   src/main/java/uptoday15/RemoveDuplicates.java
+        new file:   src/main/java/uptoday15/ToDoApp.java
+        new file:   src/main/java/uptoday15/TodoList.java
+        new file:   src/main/java/uptoday20/Dice.java
+        new file:   src/main/java/uptoday20/Game.java
+        new file:   src/main/java/uptoday20/LuckyDiceAdventure.java
+        new file:   src/main/java/uptoday20/MathQuiz.java
+        new file:   src/main/java/uptoday20/MathQuizGame.java
+        new file:   src/main/java/uptoday20/Question.java
+        new file:   src/main/java/uptoday20/Student.java
+        new file:   src/main/java/uptoday20/StudentArrayExample.java
+        new file:   src/main/java/uptoday20/TestCar.java
+        new file:   src/main/java/uptoday20/TestMain.java
+
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git commit
+Aborting commit due to empty commit message.
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Git_Tips_Tricks
+        new file:   pom.xml
+        new file:   src/main/java/abstraction/Car.java
+        new file:   src/main/java/abstraction/DieselCar.java
+        new file:   src/main/java/abstraction/ElectricCar.java
+        new file:   src/main/java/abstraction/GasolineCar.java
+        new file:   src/main/java/abstraction/Main.java
+        new file:   src/main/java/bankaccountproject/BankAccount.java
+        new file:   src/main/java/bankaccountproject/BankAccountManagementSystem.java
+        new file:   src/main/java/bankaccountproject/BankService.java
+        new file:   src/main/java/bankaccountproject/CurrentAccount.java
+        new file:   src/main/java/bankaccountproject/InputUtils.java
+        new file:   src/main/java/bankaccountproject/LinkedHashSetExample.java
+        new file:   src/main/java/bankaccountproject/SavingsAccount.java
+        new file:   src/main/java/collections/CustomTreeSetExample.java
+        new file:   src/main/java/collections/DuplicateChecker.java
+        new file:   src/main/java/collections/TreeSetExample.java
+        new file:   src/main/java/collections/TreeSetNavigationExample.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/BankAccountManagementSystem.java
+        new file:   src/main/java/com/tutorialseu/oops/BankService.java
+        new file:   src/main/java/com/tutorialseu/oops/CurrentAccount.java
+        new file:   src/main/java/com/tutorialseu/oops/InputUtils.java
+        new file:   src/main/java/com/tutorialseu/oops/SavingsAccount.java
+        new file:   src/main/java/ooppackage/AdvancedGame.java
+        new file:   src/main/java/ooppackage/Game.java
+        new file:   src/main/java/ooppackage/InputGame.java
+        new file:   src/main/java/ooppackage/WordGuessingGame.java
+        new file:   src/main/java/org/example/Main.java
+        new file:   src/main/java/uptoday15/NumberGuessingGame.java
+        new file:   src/main/java/uptoday15/NumberOfDigits.java
+        new file:   src/main/java/uptoday15/RemoveDuplicates.java
+        new file:   src/main/java/uptoday15/ToDoApp.java
+        new file:   src/main/java/uptoday15/TodoList.java
+        new file:   src/main/java/uptoday20/Dice.java
+        new file:   src/main/java/uptoday20/Game.java
+        new file:   src/main/java/uptoday20/LuckyDiceAdventure.java
+        new file:   src/main/java/uptoday20/MathQuiz.java
+        new file:   src/main/java/uptoday20/MathQuizGame.java
+        new file:   src/main/java/uptoday20/Question.java
+        new file:   src/main/java/uptoday20/Student.java
+        new file:   src/main/java/uptoday20/StudentArrayExample.java
+        new file:   src/main/java/uptoday20/TestCar.java
+        new file:   src/main/java/uptoday20/TestMain.java
+
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git commit
+[master (root-commit) 859300a] Initalize the project
+ 45 files changed, 1718 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Git_Tips_Tricks
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/abstraction/Car.java
+ create mode 100644 src/main/java/abstraction/DieselCar.java
+ create mode 100644 src/main/java/abstraction/ElectricCar.java
+ create mode 100644 src/main/java/abstraction/GasolineCar.java
+ create mode 100644 src/main/java/abstraction/Main.java
+ create mode 100644 src/main/java/bankaccountproject/BankAccount.java
+ create mode 100644 src/main/java/bankaccountproject/BankAccountManagementSystem.java
+ create mode 100644 src/main/java/bankaccountproject/BankService.java
+ create mode 100644 src/main/java/bankaccountproject/CurrentAccount.java
+ create mode 100644 src/main/java/bankaccountproject/InputUtils.java
+ create mode 100644 src/main/java/bankaccountproject/LinkedHashSetExample.java
+ create mode 100644 src/main/java/bankaccountproject/SavingsAccount.java
+ create mode 100644 src/main/java/collections/CustomTreeSetExample.java
+ create mode 100644 src/main/java/collections/DuplicateChecker.java
+ create mode 100644 src/main/java/collections/TreeSetExample.java
+ create mode 100644 src/main/java/collections/TreeSetNavigationExample.java
+ create mode 100644 src/main/java/com/tutorialseu/oops/BankAccount.java
+ create mode 100644 src/main/java/com/tutorialseu/oops/BankAccountManagementSystem.java
+ create mode 100644 src/main/java/com/tutorialseu/oops/BankService.java
+ create mode 100644 src/main/java/com/tutorialseu/oops/CurrentAccount.java
+ create mode 100644 src/main/java/com/tutorialseu/oops/InputUtils.java
+ create mode 100644 src/main/java/com/tutorialseu/oops/SavingsAccount.java
+ create mode 100644 src/main/java/ooppackage/AdvancedGame.java
+ create mode 100644 src/main/java/ooppackage/Game.java
+ create mode 100644 src/main/java/ooppackage/InputGame.java
+ create mode 100644 src/main/java/ooppackage/WordGuessingGame.java
+ create mode 100644 src/main/java/org/example/Main.java
+ create mode 100644 src/main/java/uptoday15/NumberGuessingGame.java
+ create mode 100644 src/main/java/uptoday15/NumberOfDigits.java
+ create mode 100644 src/main/java/uptoday15/RemoveDuplicates.java
+ create mode 100644 src/main/java/uptoday15/ToDoApp.java
+ create mode 100644 src/main/java/uptoday15/TodoList.java
+ create mode 100644 src/main/java/uptoday20/Dice.java
+ create mode 100644 src/main/java/uptoday20/Game.java
+ create mode 100644 src/main/java/uptoday20/LuckyDiceAdventure.java
+ create mode 100644 src/main/java/uptoday20/MathQuiz.java
+ create mode 100644 src/main/java/uptoday20/MathQuizGame.java
+ create mode 100644 src/main/java/uptoday20/Question.java
+ create mode 100644 src/main/java/uptoday20/Student.java
+ create mode 100644 src/main/java/uptoday20/StudentArrayExample.java
+ create mode 100644 src/main/java/uptoday20/TestCar.java
+ create mode 100644 src/main/java/uptoday20/TestMain.java
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> GIT LOG
+git: 'LOG' is not a git command. See 'git --help'.
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git log
+commit 859300a0d6829ba1329f39ddd42c0fac79801c85 (HEAD -> master)
+Author: Rajesh <rajesh.daswani@gmail.com>
+Date:   Fri May 30 15:58:43 2025 +0100
+
+    Initalize the project
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git_Tips_Tricks
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass>
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git remote add origin https://github.com/rdaswani/javamasterclass.git
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass>  git push --set-upstream origin master
+info: please complete authentication in your browser...
+Enumerating objects: 61, done.
+Counting objects: 100% (61/61), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (55/55), done.
+Writing objects: 100% (61/61), 19.28 KiB | 858.00 KiB/s, done.
+Total 61 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/rdaswani/javamasterclass.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git push
+Everything up-to-date
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git_Tips_Tricks
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\RajeshDaswani\IdeaProjects\JavaMasterClass>
