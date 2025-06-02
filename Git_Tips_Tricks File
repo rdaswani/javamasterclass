@@ -48,3 +48,4 @@ go back to remote in UI and check the files
 Now if you change a file shortcut to move to staging and commit is below
  git commit -am"Shortcut use Updated GitTipsfile"
  verify by git log
+
