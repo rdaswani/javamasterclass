@@ -107,3 +107,4 @@ That’s it—no messy merge commit! 🎉
 ✅ Why it’s called “fast-forward”
 Because the branch’s history doesn’t change—Git just moves the pointer forward, like fast-forwarding a video. ⏩
 
+
