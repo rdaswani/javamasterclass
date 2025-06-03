@@ -49,3 +49,61 @@ Now if you change a file shortcut to move to staging and commit is below
  git commit -am"Shortcut use Updated GitTipsfile"
  verify by git log
 
+*****************************************************************
+
+Cloning, merging, fetching and pulling
+
+| Command     | Purpose                                                                      | Example                                      |
+| ----------- | ---------------------------------------------------------------------------- | -------------------------------------------- |
+| `git clone` | Copy an entire remote repository to your local machine.                      | `git clone https://github.com/user/repo.git` |
+| `git fetch` | Download new data from the remote repo **but don’t merge** it yet.           | `git fetch origin`                           |
+| `git pull`  | Download new data from the remote **and merge** it with your current branch. | `git pull origin main`                       |
+| `git merge` | Merge changes from another branch into your current branch.                  | `git merge feature-branch`                   |
+
+
+Key Differences:
+✅ Cloning → One-time setup to get a copy of a remote repo.
+✅ Fetching → Grab new data but don’t apply it yet.
+✅ Pulling → Fetch + Merge (immediate update of your local branch).
+✅ Merging → Combine changes from another branch or source.
+
+just like init , its same concept for cloning an existing  repo from remote repo from gitlab/github/bitbucket
+it clones in 2 places working directory and local repo
+
+| Command        | Purpose                                       | Example                  |
+| -------------- | --------------------------------------------- | ------------------------ |
+| `git branch`   | List or create branches                       | `git branch new-feature` |
+| `git checkout` | Switch to another branch (or create & switch) | `git checkout -b hotfix` |
+
+
+ Rebasing (Simple Explanation)
+ ============================
+✅ Rebasing is like “moving your work to the end” of the main branch.
+
+Example:
+Imagine:
+
+main ➜ A—B—C
+
+feature ➜ A—B—C—D—E (you’re 2 commits ahead: D and E)
+
+main moves on and gets new commits: A—B—C—F—G
+
+
+ Fast-Forward Merge (Simplified)
+ =================================
+A fast-forward merge happens when:
+
+✅ The branch you’re merging has no new commits compared to the branch you’re on.
+✅ Git can just “slide” the branch pointer forward without needing to create a new merge commit.
+
+Example in plain words:
+1️⃣ Imagine main is at commit A.
+2️⃣ feature branch is at commit C, and main doesn’t have anything new.
+3️⃣ When you merge feature into main, Git just moves the pointer from A ➜ C.
+
+That’s it—no messy merge commit! 🎉
+
+✅ Why it’s called “fast-forward”
+Because the branch’s history doesn’t change—Git just moves the pointer forward, like fast-forwarding a video. ⏩
+
