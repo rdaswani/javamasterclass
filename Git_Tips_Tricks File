@@ -28,7 +28,8 @@ use git add . to push files to staging area
 check if they moved using git status
 
 Now to push them to the local repository
-use git commit which opens up the default text editor, update commit message in first line and close the file, to dit it one go use git commit -m
+use git commit which opens up the default text editor, update commit message in first line and close the file,
+to dit it one go use git commit -m
 
 check git status after commit and use git log to check the initial commit
 
@@ -108,3 +109,4 @@ That’s it—no messy merge commit! 🎉
 Because the branch’s history doesn’t change—Git just moves the pointer forward, like fast-forwarding a video. ⏩
 
 
+1
